@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link type="text/css" href="lib/jquery-ui-1.8.4.custom/css/smoothness/jquery-ui-1.8.4.custom.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="lib/raphael-min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui-1.8.4.custom/js/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui-1.8.4.custom/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="myflow.js"></script>
+	<script type="text/javascript" src="myflow.jpdl4.js"></script>
+	<script type="text/javascript" src="myflow.editors.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" >	
+		// function changefun(){
+  //          return new $('#myflow').myflow.tools.deletePath("path1502435799427");
+
+  //       }		
+	</script>
+</head>
+<body>
+	<div id="myflow_tools" class="ui-widget-content">
+	<div id="myflow_tools_handle" style="text-align: center;"
+		class="ui-widget-header"> 工具集 </div>
+
+	
+	<div class="node" id="myflow_redraw"><img src="img/save.gif" />&nbsp;&nbsp;重绘</div>
+	<div class="node" id="myflow_save"><img src="img/save.gif" />&nbsp;&nbsp;保存</div>
+	
+	<div>
+
+	<hr />
+	</div>
+	<div class="node selectable selected" id="pointer"><img
+		src="img/select16.gif" />&nbsp;&nbsp;选择</div>
+		
+	<div class="node selectable" id="path"><img
+		src="img/16/flow_sequence.png" />&nbsp;&nbsp;流程线</div>
+		<div class="node selectable" id="cpath"><img
+		src="img/16/flow_cpath.png" />&nbsp;&nbsp;参数</div>
+		<div class="node selectable" id="lpath"><img
+		src="img/16/flow_lpath.png" />&nbsp;&nbsp;流关系</div>
+		<div class="node selectable" id="jpath"><img
+		src="img/16/flow_jpath.png" />&nbsp;&nbsp;积关系</div>
+	<div>
+	<hr />
+	</div>
+	<div class="node state" id="start" type="start"><img
+		src="img/16/start_event_empty.png" />&nbsp;&nbsp;开始</div>
+	<div class="node state" id="state" type="state"><img
+		src="img/16/task_empty.png" />&nbsp;&nbsp;状态</div>
+	<div class="node state" id="task" type="task"><img
+		src="img/16/task_empty.png" />&nbsp;&nbsp;设备</div>
+	<div class="node state" id="eq0" type="eq0"><img
+		src="img/16/task_empty.png" />&nbsp;&nbsp;设备B</div>
+	<div class="node state" id="task" type="task"><img
+		src="img/16/task_empty.png" />&nbsp;&nbsp;设备C</div>
+	<div class="node state" id="task" type="task"><img
+		src="img/16/task_empty.png" />&nbsp;&nbsp;设备D</div>
+	<div class="node state" id="fork" type="fork"><img
+		src="img/16/gateway_parallel.png" />&nbsp;&nbsp;分支</div>
+	<div class="node state" id="join" type="join"><img
+		src="img/16/gateway_parallel.png" />&nbsp;&nbsp;合并</div>
+	<div class="node state" id="end" type="end"><img
+		src="img/16/end_event_terminate.png" />&nbsp;&nbsp;结束</div>
+	
+	</div>
+
+	<div id="myflow_props" class="ui-widget-content">
+	<div id="myflow_props_handle" class="ui-widget-header">属性</div>
+	<table border="1" width="100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>aaa</td>
+		</tr>
+		<tr>
+			<td>aaa</td>
+		</tr>
+	</table>
+	<div>&nbsp;</div>
+	</div>
+
+	<div id="myflow"></div>
+</body>
+</html>
